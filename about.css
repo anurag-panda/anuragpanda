@@ -131,7 +131,8 @@ section {
     font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
     margin: 10px 0;
     margin-left: 20px;
-    margin-top: 300px;
+    margin-top: 500px;
+    text-align: justify;
 }
 
 .content-intro .education {

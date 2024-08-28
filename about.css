@@ -131,6 +131,7 @@ section {
     font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
     margin: 10px 0;
     margin-left: 20px;
+    margin-top: 300px;
 }
 
 .content-intro .education {
@@ -184,7 +185,7 @@ section {
     text-shadow: 0 0 10px rgb(211, 3, 3);
     width: 100%;
     min-height: 100px;
-    margin-bottom: 50px;
+    margin-bottom:marhi50px;
     margin-top: 20px;
 }
 

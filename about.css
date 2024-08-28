@@ -212,7 +212,7 @@ section {
     }
 
     nav .logo {
-        position: absolute;
+        position: sticky;
         top: 16px;
         left: 15px;
         font-size: 1.5rem;

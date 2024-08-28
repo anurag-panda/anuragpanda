@@ -195,7 +195,7 @@ section {
 
 .extra {
     color: white;
-    margin-top: 100px;
+    margin-top: -300px;
     min-height: 100px;
     margin-left: 20px;
     margin-right: 20px;
@@ -239,7 +239,7 @@ section {
     }
 
     .extra {
-        margin-top: 300px;
+        margin-top: -600px;
         margin-left: 20px;
         margin-right: 20px;
         margin-bottom: 100px;
@@ -255,10 +255,10 @@ section {
     }
 
     .extra {
-        margin-top: 400px;
+        margin-top: -400px;
         margin-left: 20px;
         margin-right: 20px;
-        margin-bottom: 100px;
+        margin-bottom: 300px;
         text-align: justify;
     }
 }

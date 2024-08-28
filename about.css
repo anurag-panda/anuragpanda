@@ -219,6 +219,7 @@ section {
         top: 16px;
         left: 15px;
         font-size: 1.5rem;
+        margin-top: 40px
     }
 
     .main-container {
@@ -237,7 +238,7 @@ section {
 
     .main-container .content-intro {
         width: 80%;
-        margin-top: 50px;
+        margin-top: m0px;
     }
 
     .extra {

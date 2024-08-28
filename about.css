@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+}
+
+.nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+} 
+
+.logo span {
+    color: rgb(211, 3, 3);
+    text-shadow: 0 0 10px rgb(211, 3, 3);
+}
+
+.hamburg,
+.cancel {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: white;
+    display: none;
+    font-size: clamp(2.5rem,0.5rem + 5vw, 3rem);
+}
+
+.nav-container .links {
+    display: flex;
+}
+
+.nav-container .links a {
+    font-size: 1.2rem;
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.3s linear;
+}
+
+.nav-container .links a:hover {
+    color:rgb(211, 3, 3);
+    border-bottom: 2px solid rgb(211, 3, 3);
+}
+
+.dropdown {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(4px) brightness(40%);
+    box-shadow: 0 0 20px black;
+    transition: 0.2s linear;
+
+}
+
+.dropdown .links a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a:hover {
+    background-color: rgb(211, 3, 3);
+}
+
+section {
+    width: 100%;
+    height: 90vh;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-container .content-intro {
+    color: white;
+    width: 100%;
+    min-height: 100px;
+}
+
+.content-intro h2 {
+    font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
+    margin-left: 20px;
+    margin-top: -150px;
+}
+
+.content-intro h2 span {
+    font-weight: 700;
+    text-shadow: 0 0 10px rgb(211, 3, 3);
+    color: rgb(211, 3, 3);
+}
+
+.content-intro .intro {
+    font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
+    margin: 10px 0;
+    margin-left: 20px;
+}
+
+.content-intro .education {
+    color: white;
+    width: 100%;
+    min-height: 100px;
+    margin-left: 20px;
+    margin-top: -80px;
+}
+
+.education .edu {
+    color: rgb(211, 3, 3);
+    text-shadow: 0 0 10px rgb(211, 3, 3);
+    width: 100%;
+    min-height: 100px;
+    margin-top: 100px;
+    margin-bottom: -100px;
+
+}
+
+.education .secondary {
+    color: rgb(211, 3, 3);
+    text-shadow: 0 0 10px rgb(211, 3, 3);
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: -50px;
+    margin-top: 20px;
+}
+
+.education .secondary span {
+    color: white;
+    text-shadow: none;
+}
+
+.education .high {
+    color: rgb(211, 3, 3);
+    text-shadow: 0 0 10px rgb(211, 3, 3);
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: -50px;
+    margin-top: -20px;
+}
+
+.education .high span {
+    color: white;
+    text-shadow: none;
+}
+
+.education .cse {
+    color: rgb(211, 3, 3);
+    text-shadow: 0 0 10px rgb(211, 3, 3);
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: -50px;
+    margin-top: -20px;
+}
+
+.education .cse span {
+    color: white;
+    text-shadow: none;
+}
+
+.extra {
+    color: white;
+    margin-top: 100px;
+    min-height: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    margin-top: -300px;
+    font-size: 20px;
+    justify-content: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+@media (max-width:884px) {
+    body {
+        height: 1500px;
+    }
+
+    nav .logo {
+        position: absolute;
+        top: 16px;
+        left: 15px;
+        font-size: 1.5rem;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .nav-container .links {
+        display: none;
+    }
+
+    .hamburg,
+    .cancel {
+        display: block;
+    }
+
+    .main-container .content-intro {
+        width: 80%;
+        margin-top: -1000px;
+    }
+
+    .extra {
+        margin-top: -500px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 100px;
+        text-align: justify;
+    }
+}
+
+@media (max-width:440px) {
+    
+    .main-container .content-intro {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .extra {
+        margin-top: -500px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 100px;
+        text-align: justify;
+    }
+}
+
+@media (max-width:375px) {
+    .main-container .content-intro {
+        width: 80%;
+        margin-top: -1300px;
+    }
+
+    .extra {
+        margin-top: -700px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 100px;
+        text-align: justify;
+    }
+}
+

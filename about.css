@@ -32,6 +32,7 @@ nav {
     color: white;
     font-size: 2rem;
     font-weight: bold;
+    position: sticky;
 } 
 
 .logo span {

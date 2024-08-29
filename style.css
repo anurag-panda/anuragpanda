@@ -333,7 +333,7 @@ section {
 }
 
 .typing-text span{
-    position: relative;
+    position: sticky;
 }
 
 .typing-text span::before{
